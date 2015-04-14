@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')      
+    title Hanoi Towers
+    link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
+    link(rel='shortcut icon', href='/favicon.ico')
+    body
+      h1#title Hanoi Towers
+
+      #tower1.tower
+        #disk1.disk
+        #disk2.disk
+        #disk3.disk
+      #tower2.tower
+      #tower3.tower
+
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src='/vendor/lodash/lodash.min.js')
+    script(src=isProd ? '/index.min.js' : '/index.js')
